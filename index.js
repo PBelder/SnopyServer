@@ -3,11 +3,11 @@ const app = express();
 
 app.get('/', (req, res) => {
   const data = [
-    { string: 'hello world', number: 42 },
-    { string: 'hello world', number: 42 },
-    { string: 'hello world', number: 42 }
+    { string: 'hello kaka', number: 41 },
+    { string: 'hello pipi', number: 42 },
+    { string: 'hello whatever', number: 43 }
   ];
-  
+
   res.json(data);
 });
 
