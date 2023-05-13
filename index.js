@@ -43,8 +43,6 @@ app.get('/', (req, res) => {
       res.json(sp500);
     });
   });
-
-
   //res.json(data);
 });
 
