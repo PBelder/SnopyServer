@@ -1,6 +1,5 @@
-//https://quiet-dawn-06541.herokuapp.com
-//https://dashboard.heroku.com/apps/quiet-dawn-06541/resources
 //https://snopy.cyclic.app
+
 const express = require('express');
 const app = express();
 const cheerio = require('cheerio');
@@ -10,13 +9,6 @@ const url = "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies";
 
 
 app.get('/', (req, res) => {
-  
-  const data = [
-    { string: 'hello kaka', number: 41 },
-    { string: 'hello pipi', number: 42 },
-    { string: 'hello whatever', number: 43 }
-  ];
-
  https.get(url, function(response) {
     let html = '';
     response.on('data', function(chunk) {
