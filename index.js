@@ -1,6 +1,6 @@
 //https://quiet-dawn-06541.herokuapp.com
 //https://dashboard.heroku.com/apps/quiet-dawn-06541/resources
-
+//https://snopy.cyclic.app
 const express = require('express');
 const app = express();
 const cheerio = require('cheerio');
@@ -37,13 +37,9 @@ app.get('/', (req, res) => {
           companies.push({ ticker, name, sector });
         }
       });
-
-      const sp500 = JSON.stringify(companies);
-      console.log(sp500);
-      res.json(sp500);
+      res.json(companies);
     });
   });
-  //res.json(data);
 });
 
 const port = process.env.PORT || 3000;
