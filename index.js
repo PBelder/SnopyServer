@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
     });
     response.on('end', function() {
       const $ = cheerio.load(html);
-      const table = $('table.wikitable.sortable');
+      const table = $('table.wikitable.sortable:first');
       const rows = table.find('tbody > tr');
       const companies = [];
 
